@@ -1,0 +1,105 @@
+{
+  "id": "overhead-underground-utilities",
+  "name_zh": "架空設施和地下設施工作",
+  "name_en": "Overhead & Underground Utilities",
+  "category": "building-services",
+  "ra_references": [],
+  "risk_matrix": {
+    "lr_scale": [1, 2, 3, 4, 5],
+    "cr_scale": ["A", "B", "C", "D", "E"],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "架設高空電纜 (地盤出入口/過路人行位置)",
+      "hazards": [
+        {
+          "hazard": "高空工作及觸電",
+          "affect": "W,P,A",
+          "lr": 2,
+          "cr": "E",
+          "risk_level": "II",
+          "control_measures": [
+            "所有離地工作人員必須配戴安全帶及扣於獨立救生繩上",
+            "必須使用合適的工作台或平台",
+            "工作位置下方須設置圍封及警告牌",
+            "必須確定電纜已截斷電源方可開始工作",
+            "工作前必須進行上鎖掛牌(Lock-out/Tag-out)程序",
+            "祇可由註冊電業工程人員進行電力相關工作",
+            "使用絕緣工具及個人防護裝備",
+            "電纜須妥善支撐及固定"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "檢查及探測地下設施",
+      "hazards": [
+        {
+          "hazard": "破壞地下設施 (水喉/電線/煤氣管)",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "E",
+          "risk_level": "II",
+          "control_measures": [
+            "施工前必須查閱及對照地下公用設施圖則",
+            "使用認可的管線探測儀器(CABLE DETECTOR)進行探測",
+            "探測結果須由合資格人士確認",
+            "在地面標記地下設施位置",
+            "以人手挖掘至接近已知地下設施位置",
+            "發現地下設施後須加以保護及支撐",
+            "與公用設施公司保持協調及溝通"
+          ]
+        },
+        {
+          "hazard": "誤踏地洞/沙泥塌下",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "所有地洞必須妥善圍封及設置警告標示",
+            "挖掘後之泥坑須設置支撐及安全通道",
+            "保持工作範圍照明充足",
+            "穿著合適安全鞋"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "開出平水墨線",
+      "hazards": [
+        {
+          "hazard": "搬運儀器扭傷",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "提供體力處理操作訓練",
+            "安排足夠人手搬運儀器",
+            "使用適當搬運工具(如手推車)輔助"
+          ]
+        },
+        {
+          "hazard": "攀爬跌下",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "上落時須保持三點接觸",
+            "提供安全的上落通道",
+            "不可手持物件上落爬梯",
+            "使用經檢查合格之工作台/爬梯",
+            "穿著合適安全鞋"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-{
-  "description": "工作風險評估知識庫 — 工序總目錄 (NKIL6568 + A203A + A030 共122項工序)",
-  "total_processes": 122,
+﻿{
+  "description": "工作風險評估知識庫 — 工序總目錄 (129項工序，5大分類)",
+  "total_processes": 129,
   "categories": {
     "structural": {
       "name_zh": "結構",
@@ -10,12 +10,12 @@
     "lifting": {
       "name_zh": "吊重/機械設備",
       "name_en": "Lifting",
-      "count": 21
+      "count": 22
     },
     "building-services": {
       "name_zh": "屋宇設備",
       "name_en": "Building Services",
-      "count": 16
+      "count": 17
     },
     "finishing": {
       "name_zh": "泥水/裝修",
@@ -25,7 +25,7 @@
     "others": {
       "name_zh": "其他",
       "name_en": "Others",
-      "count": 17
+      "count": 23
     }
   },
   "processes": [
@@ -1259,108 +1259,84 @@
       "name_zh": "清除樹木/樹藝工作",
       "name_en": "Tree Removal / Arboriculture Works",
       "category": "others",
-      "risk_level": "B",
-      "source": "A203A-RA01",
-      "ra_references": ["A203A-RA01"]
+      "risk_level": "B",      "ra_references": ["A203A-RA01"]
     },
     {
       "id": "predrill",
       "name_zh": "預鑽孔工程",
       "name_en": "Predrill Works",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A203A-RA03",
-      "ra_references": ["A203A-RA03"]
+      "risk_level": "B",      "ra_references": ["A203A-RA03"]
     },
     {
       "id": "backfill-compaction",
       "name_zh": "回填及壓實",
       "name_en": "Backfill and Compaction",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A203A-RA06",
-      "ra_references": ["A203A-RA06"]
+      "risk_level": "B",      "ra_references": ["A203A-RA06"]
     },
     {
       "id": "sheet-pile-excavation-shoring",
       "name_zh": "打閘板、挖掘和裝頂及拆除閘板",
       "name_en": "Sheet Pile, Excavation & Shoring",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A203A-RA07",
-      "ra_references": ["A203A-RA07"]
+      "risk_level": "B",      "ra_references": ["A203A-RA07"]
     },
     {
       "id": "cutting-hpile",
       "name_zh": "切割H工字鋼樁",
       "name_en": "Cutting H-Pile",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A203A-RA09",
-      "ra_references": ["A203A-RA09"]
+      "risk_level": "B",      "ra_references": ["A203A-RA09"]
     },
     {
       "id": "pier-construction",
       "name_zh": "建造橋墩",
       "name_en": "Pier Construction",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A203A-RA10",
-      "ra_references": ["A203A-RA10"]
+      "risk_level": "B",      "ra_references": ["A203A-RA10"]
     },
     {
       "id": "tail-well-connection",
       "name_zh": "接駁尾井",
       "name_en": "Tail Well Connection",
       "category": "structural",
-      "risk_level": "A",
-      "source": "A203A-RA12",
-      "ra_references": ["A203A-RA12"]
+      "risk_level": "A",      "ra_references": ["A203A-RA12"]
     },
     {
       "id": "asphalt-paving",
       "name_zh": "鋪瀝青路面",
       "name_en": "Asphalt Paving",
       "category": "others",
-      "risk_level": "B",
-      "source": "A203A-RA13",
-      "ra_references": ["A203A-RA13"]
+      "risk_level": "B",      "ra_references": ["A203A-RA13"]
     },
     {
       "id": "footbridge-lifting",
       "name_zh": "吊運行人天橋",
       "name_en": "Footbridge Lifting",
       "category": "lifting",
-      "risk_level": "A",
-      "source": "A203A-RA14",
-      "ra_references": ["A203A-RA14"]
+      "risk_level": "A",      "ra_references": ["A203A-RA14"]
     },
     {
       "id": "steel-ibeam-storage",
       "name_zh": "存放及吊運工字鐵",
       "name_en": "Steel I-Beam Storage & Lifting",
       "category": "lifting",
-      "risk_level": "B",
-      "source": "A203A-RA04",
-      "ra_references": ["A203A-RA04"]
+      "risk_level": "B",      "ra_references": ["A203A-RA04"]
     },
     {
       "id": "rebar-bending",
       "name_zh": "屈鐵 (鋼筋彎曲)",
       "name_en": "Rebar Bending",
       "category": "structural",
-      "risk_level": "C",
-      "source": "A030-RA01",
-      "ra_references": ["A030-RA01"]
+      "risk_level": "C",      "ra_references": ["A030-RA01"]
     },
     {
       "id": "els-dismantling",
       "name_zh": "拆卸臨時工字鐵台及ELS",
       "name_en": "ELS & Temporary Steel Platform Dismantling",
       "category": "structural",
-      "risk_level": "B",
-      "source": "A030-RA03",
-      "ra_references": ["A030-RA03"]
+      "risk_level": "B",      "ra_references": ["A030-RA03"]
     },
     {
       "id": "building-superstructure",
@@ -1368,8 +1344,63 @@
       "name_en": "Building Superstructure Construction",
       "category": "structural",
       "risk_level": "B",
-      "source": "A030-RA05",
       "ra_references": ["A030-RA05"]
+    },
+    {
+      "id": "abrasive-wheels",
+      "name_zh": "使用砂輪 (座地及手提鎅機)",
+      "name_en": "Abrasive Wheels (Bench & Portable)",
+      "category": "others",
+      "risk_level": "C",
+      "ra_references": ["A203-GRA-004"]
+    },
+    {
+      "id": "woodworking-machinery",
+      "name_zh": "使用木工機械 (風車鋸床)",
+      "name_en": "Woodworking Machinery",
+      "category": "others",
+      "risk_level": "C",
+      "ra_references": ["A203-GRA-007"]
+    },
+    {
+      "id": "gas-welding-cutting",
+      "name_zh": "氣體焊接及火焰切割",
+      "name_en": "Gas Welding & Flame Cutting",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": ["A203-GRA-012"]
+    },
+    {
+      "id": "bamboo-scaffolding",
+      "name_zh": "搭建及使用竹棚架",
+      "name_en": "Bamboo Scaffolding Erection & Use",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": ["A203-GRA-017"]
+    },
+    {
+      "id": "hoist-operation",
+      "name_zh": "操作開士機 (物料吊重機)",
+      "name_en": "Material Hoist Operation",
+      "category": "lifting",
+      "risk_level": "C",
+      "ra_references": ["A203-GRA-023"]
+    },
+    {
+      "id": "pavement-road-work",
+      "name_zh": "行人路及道路面工作",
+      "name_en": "Pavement & Road Works",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": ["A203-GRA-027"]
+    },
+    {
+      "id": "overhead-underground-utilities",
+      "name_zh": "架空設施和地下設施工作",
+      "name_en": "Overhead & Underground Utilities",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": ["A203-GRA-028"]
     }
   ]
 }

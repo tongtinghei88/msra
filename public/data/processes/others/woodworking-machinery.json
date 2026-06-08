@@ -1,0 +1,100 @@
+{
+  "id": "woodworking-machinery",
+  "name_zh": "使用木工機械 (風車鋸床)",
+  "name_en": "Woodworking Machinery",
+  "category": "others",
+  "ra_references": [],
+  "risk_matrix": {
+    "lr_scale": [1, 2, 3, 4, 5],
+    "cr_scale": ["A", "B", "C", "D", "E"],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "開料使用風車鋸床",
+      "hazards": [
+        {
+          "hazard": "被鋸片割傷手部或被木料回彈擊中",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "衹許由受訓工人操作木工機械",
+            "安裝金屬型號頂罩完全遮蓋鋸片",
+            "鋸尾刀與鋸片之距離不得超過15mm",
+            "安裝安全索掣及緊急停機掣",
+            "鋸床須使用推木棍進行木料切割",
+            "保持場地整潔",
+            "封蓋所有危險轉動部份"
+          ]
+        },
+        {
+          "hazard": "火警",
+          "affect": "W,P,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "定時清理木糠及配置水劑或粉劑滅火筒"
+          ]
+        },
+        {
+          "hazard": "觸電",
+          "affect": "W,A",
+          "lr": 2,
+          "cr": "E",
+          "risk_level": "II",
+          "control_measures": [
+            "採用防水插頭及工業用電線",
+            "定期檢查電工具的狀況，預有損壞須由持牌電工維修"
+          ]
+        },
+        {
+          "hazard": "底部危險部份",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "採用護罩，須遮蓋轉動及機動範圍"
+          ]
+        },
+        {
+          "hazard": "木屑射出傷害眼睛",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "配戴認可護眼罩"
+          ]
+        },
+        {
+          "hazard": "噪音損害聽覺",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "進行噪音評估定出需要配戴認可護耳設備之距離"
+          ]
+        },
+        {
+          "hazard": "吸入木屑影響呼吸系統",
+          "affect": "W,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "配戴認可防塵口罩或豬咀"
+          ]
+        }
+      ]
+    }
+  ]
+}
