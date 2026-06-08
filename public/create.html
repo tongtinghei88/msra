@@ -21,8 +21,9 @@
   <main class="container">
     <header class="page-header">
       <h1 id="formTitle">新增風險評估</h1>
-      <div>
-        <button id="loadTemplateBtn" class="btn btn-outline">從範本載入</button>
+      <div style="display:flex;gap:8px">
+        <button id="loadTemplateBtn" class="btn btn-outline">從 Firestore 範本載入</button>
+        <button id="loadProcessBtn" class="btn btn-primary">從工序庫載入</button>
       </div>
     </header>
 
@@ -107,8 +108,30 @@
   <div id="templateModal" class="modal" style="display:none">
     <div class="modal-content">
       <span class="modal-close">&times;</span>
-      <h2>選擇範本</h2>
+      <h2>選擇 Firestore 範本</h2>
       <div id="templateList" class="template-list">
+        <p class="text-muted">載入中...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="processModal" class="modal" style="display:none">
+    <div class="modal-content modal-lg">
+      <span class="modal-close">&times;</span>
+      <h2>從工序庫選擇工作工序</h2>
+      <p class="text-muted" style="margin-bottom:16px">選擇一個工序，系統會自動載入相關的危害及控制措施</p>
+      <div id="processCategoryFilter" style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+        <button class="btn btn-sm btn-primary process-cat-btn" data-cat="all">全部 (109)</button>
+        <button class="btn btn-sm btn-outline process-cat-btn" data-cat="structural">結構 (34)</button>
+        <button class="btn btn-sm btn-outline process-cat-btn" data-cat="lifting">吊重/機械 (19)</button>
+        <button class="btn btn-sm btn-outline process-cat-btn" data-cat="building-services">屋宇設備 (16)</button>
+        <button class="btn btn-sm btn-outline process-cat-btn" data-cat="finishing">泥水/裝修 (25)</button>
+        <button class="btn btn-sm btn-outline process-cat-btn" data-cat="others">其他 (15)</button>
+      </div>
+      <div id="processSearch" style="margin-bottom:12px">
+        <input type="text" id="processSearchInput" class="input" placeholder="搜尋工序..." style="width:100%">
+      </div>
+      <div id="processList" class="template-list">
         <p class="text-muted">載入中...</p>
       </div>
     </div>

@@ -1,0 +1,1258 @@
+{
+  "description": "工作風險評估知識庫 — 工序總目錄 (共109項工序, 5大分類)",
+  "total_processes": 109,
+  "categories": {
+    "structural": {
+      "name_zh": "結構",
+      "name_en": "Structural",
+      "count": 34
+    },
+    "lifting": {
+      "name_zh": "吊重/機械設備",
+      "name_en": "Lifting",
+      "count": 19
+    },
+    "building-services": {
+      "name_zh": "屋宇設備",
+      "name_en": "Building Services",
+      "count": 16
+    },
+    "finishing": {
+      "name_zh": "泥水/裝修",
+      "name_en": "Finishing",
+      "count": 25
+    },
+    "others": {
+      "name_zh": "其他",
+      "name_en": "Others",
+      "count": 15
+    }
+  },
+  "processes": [
+    {
+      "id": "els-works",
+      "name_zh": "地庫支護工程(ELS)",
+      "name_en": "ELS Works",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-001",
+        "RA-041"
+      ]
+    },
+    {
+      "id": "sheet-pile-wall",
+      "name_zh": "鋼板樁工程",
+      "name_en": "Sheet Pile Wall Construction",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-019"
+      ]
+    },
+    {
+      "id": "trial-pit-test",
+      "name_zh": "試牆/試井/載荷試驗",
+      "name_en": "Trial Wall/Pit/Plate Load Test",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-002",
+        "RA-018",
+        "RA-043"
+      ]
+    },
+    {
+      "id": "core-test",
+      "name_zh": "混凝土鑽芯測試",
+      "name_en": "In-situ Core Test",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-003"
+      ]
+    },
+    {
+      "id": "grouting-test",
+      "name_zh": "灌漿/滲水測試",
+      "name_en": "Grouting/Water Test",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-092",
+        "RA-093"
+      ]
+    },
+    {
+      "id": "podium-construction",
+      "name_zh": "平台結構施工",
+      "name_en": "Podium Construction",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-033"
+      ]
+    },
+    {
+      "id": "tower-construction",
+      "name_zh": "大樓結構施工(低/高區)",
+      "name_en": "Tower Construction (Low/High Zone)",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-058",
+        "RA-126"
+      ]
+    },
+    {
+      "id": "transfer-plate",
+      "name_zh": "轉力層施工",
+      "name_en": "Transfer Plate Construction",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-037",
+        "RA-082"
+      ]
+    },
+    {
+      "id": "rebar-fixing",
+      "name_zh": "紮鐵/鋼筋",
+      "name_en": "Rebar Fixing",
+      "category": "structural",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-007"
+      ]
+    },
+    {
+      "id": "timber-formwork",
+      "name_zh": "木板模",
+      "name_en": "Timber Formwork",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-012",
+        "RA-022",
+        "RA-121",
+        "RA-149"
+      ]
+    },
+    {
+      "id": "column-formwork",
+      "name_zh": "柱模",
+      "name_en": "Column Formwork",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-015"
+      ]
+    },
+    {
+      "id": "aluminium-formwork",
+      "name_zh": "鋁模",
+      "name_en": "Aluminium Formwork",
+      "category": "structural",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-085"
+      ]
+    },
+    {
+      "id": "formwork-support",
+      "name_zh": "模板支撐/拆卸",
+      "name_en": "Formwork Support/Dismantle",
+      "category": "structural",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-013"
+      ]
+    },
+    {
+      "id": "concrete-pour",
+      "name_zh": "落石矢/混凝土澆灌",
+      "name_en": "Concrete Pouring",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-017",
+        "RA-036"
+      ]
+    },
+    {
+      "id": "concrete-pump",
+      "name_zh": "石矢泵/混凝土泵車",
+      "name_en": "Concrete Pump",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-054"
+      ]
+    },
+    {
+      "id": "structural-steelwork",
+      "name_zh": "結構鐵器工程",
+      "name_en": "Structural Steelwork/Ironwork",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-008"
+      ]
+    },
+    {
+      "id": "steel-bracing",
+      "name_zh": "鋼支撐/對頂/Bracing",
+      "name_en": "Steel Bracing/Strutting/Shoring",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-016",
+        "RA-039",
+        "RA-044",
+        "RA-045",
+        "RA-053"
+      ]
+    },
+    {
+      "id": "dismantle-steel",
+      "name_zh": "拆卸結構工字/King Post",
+      "name_en": "Dismantle Structural Steel/King Post",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-066",
+        "RA-071",
+        "RA-115",
+        "RA-139",
+        "RA-151",
+        "RA-164",
+        "RA-187"
+      ]
+    },
+    {
+      "id": "heavy-steel-platform",
+      "name_zh": "重型結構平台(SD)",
+      "name_en": "Heavy Structural Steel Platforms",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-056",
+        "RA-103"
+      ]
+    },
+    {
+      "id": "transfer-plate-temp-platform",
+      "name_zh": "轉力層臨時鐵台",
+      "name_en": "Transfer Plate Temporary Platforms",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-101"
+      ]
+    },
+    {
+      "id": "lift-shaft-platform",
+      "name_zh": "升降機槽鐵台",
+      "name_en": "Lift Shaft Steel Platforms",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-063",
+        "RA-114"
+      ]
+    },
+    {
+      "id": "temp-steel-platform",
+      "name_zh": "臨時鐵台(一般)",
+      "name_en": "Temporary Steel Platforms (General)",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-052",
+        "RA-064",
+        "RA-076",
+        "RA-122"
+      ]
+    },
+    {
+      "id": "temp-steel-plate",
+      "name_zh": "臨時鐵板工程",
+      "name_en": "Temporary Steel Plate Works",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-065",
+        "RA-137",
+        "RA-142",
+        "RA-175"
+      ]
+    },
+    {
+      "id": "permanent-steel-structure",
+      "name_zh": "永久樓面鋼結構",
+      "name_en": "Permanent Steel Structure",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-047",
+        "RA-135",
+        "RA-171"
+      ]
+    },
+    {
+      "id": "temp-support-frame",
+      "name_zh": "臨時支撐架(地下管線)",
+      "name_en": "Temporary Support Frame (Underground)",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-078"
+      ]
+    },
+    {
+      "id": "ground-radar-survey",
+      "name_zh": "地底探測/測量",
+      "name_en": "Ground Probing Radar/Survey",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-077",
+        "RA-225"
+      ]
+    },
+    {
+      "id": "backfill-utility",
+      "name_zh": "回填/裝頂/造渠",
+      "name_en": "Backfill/Utility Works",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-057",
+        "RA-104",
+        "RA-105",
+        "RA-144"
+      ]
+    },
+    {
+      "id": "trench-excavation",
+      "name_zh": "泥坑挖掘",
+      "name_en": "Trench Excavation",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-005"
+      ]
+    },
+    {
+      "id": "concrete-leakage",
+      "name_zh": "混凝土滲漏修補",
+      "name_en": "Concrete Leakage Remedial",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-059"
+      ]
+    },
+    {
+      "id": "floor-sawcut",
+      "name_zh": "樓面切割(Sawcut)",
+      "name_en": "Floor Sawcut",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-155"
+      ]
+    },
+    {
+      "id": "uss-kat-connection",
+      "name_zh": "USS接駁KAT",
+      "name_en": "USS to KAT Adit Connection",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-106"
+      ]
+    },
+    {
+      "id": "upw-pedestrian",
+      "name_zh": "UPW行人通道修改",
+      "name_en": "UPW Pedestrian Level Modification",
+      "category": "structural",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-070"
+      ]
+    },
+    {
+      "id": "wall-demolition",
+      "name_zh": "牆體拆除(USS/KAT)",
+      "name_en": "Wall Demolition (USS/KAT)",
+      "category": "structural",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-216"
+      ]
+    },
+    {
+      "id": "floor-screeding",
+      "name_zh": "盪平/地台盪平",
+      "name_en": "Floor Screeding/Scabbling",
+      "category": "structural",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-029"
+      ]
+    },
+    {
+      "id": "tower-crane-erect",
+      "name_zh": "裝嵌塔式起重機(天秤)",
+      "name_en": "Tower Crane Erection",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-011",
+        "RA-031",
+        "RA-032",
+        "RA-068",
+        "RA-069",
+        "RA-129",
+        "RA-133",
+        "RA-136"
+      ]
+    },
+    {
+      "id": "tower-crane-climb",
+      "name_zh": "爬升塔式起重機(天秤)",
+      "name_en": "Tower Crane Climbing",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-060",
+        "RA-072",
+        "RA-081",
+        "RA-083",
+        "RA-130",
+        "RA-150",
+        "RA-161"
+      ]
+    },
+    {
+      "id": "tower-crane-dismantle",
+      "name_zh": "拆卸塔式起重機(天秤)",
+      "name_en": "Tower Crane Dismantling",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-067",
+        "RA-073",
+        "RA-109",
+        "RA-127",
+        "RA-131",
+        "RA-132",
+        "RA-154",
+        "RA-183",
+        "RA-197",
+        "RA-200",
+        "RA-202"
+      ]
+    },
+    {
+      "id": "tower-crane-wall-tie",
+      "name_zh": "天秤Wall Tie安裝/拆卸",
+      "name_en": "Tower Crane Wall Tie",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-107",
+        "RA-111"
+      ]
+    },
+    {
+      "id": "mobile-crane-erect",
+      "name_zh": "裝嵌/拆卸起重機(流動式)",
+      "name_en": "Mobile Crane Erection/Dismantling",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-010",
+        "RA-014"
+      ]
+    },
+    {
+      "id": "roof-rig",
+      "name_zh": "屋面吊(Roof Rig)",
+      "name_en": "Roof Rig Erection/Dismantling/Maintenance",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-180",
+        "RA-189",
+        "RA-201",
+        "RA-204",
+        "RA-205",
+        "RA-207"
+      ]
+    },
+    {
+      "id": "excavator-lifting",
+      "name_zh": "吊運挖泥機",
+      "name_en": "Excavator Lifting",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-034"
+      ]
+    },
+    {
+      "id": "precast-lifting",
+      "name_zh": "吊運預製件",
+      "name_en": "Precast Element Lifting",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-055"
+      ]
+    },
+    {
+      "id": "heat-exchanger-lifting",
+      "name_zh": "吊運熱交換器",
+      "name_en": "Heat Exchanger Lifting",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-191"
+      ]
+    },
+    {
+      "id": "load-test-equip-lifting",
+      "name_zh": "吊運靜力載荷試驗儀器",
+      "name_en": "Static Load Test Equipment Lifting",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-051"
+      ]
+    },
+    {
+      "id": "heavy-steel-lifting",
+      "name_zh": "重型吊運(SD Platforms)",
+      "name_en": "Heavy Lifting Structural Steel",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-102"
+      ]
+    },
+    {
+      "id": "general-lifting",
+      "name_zh": "吊重機吊運/起卸物料(通用)",
+      "name_en": "General Lifting & Material Handling",
+      "category": "lifting",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-006"
+      ]
+    },
+    {
+      "id": "lift-escalator-hoisting",
+      "name_zh": "升降機/電扶梯吊運",
+      "name_en": "Lift/Escalator Hoisting",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-084",
+        "RA-173",
+        "RA-190"
+      ]
+    },
+    {
+      "id": "gantry-frame",
+      "name_zh": "龍門架搭建/拆卸",
+      "name_en": "Gantry Frame Erection/Dismantling",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-035",
+        "RA-062"
+      ]
+    },
+    {
+      "id": "suspended-platform",
+      "name_zh": "懸掛式鐵台重量測試",
+      "name_en": "Suspended Platform Load Test",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-108"
+      ]
+    },
+    {
+      "id": "gondola-monorail",
+      "name_zh": "吊船/Monorail/Gondola",
+      "name_en": "Gondola/BMU/Monorail",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-113",
+        "RA-208",
+        "RA-244"
+      ]
+    },
+    {
+      "id": "concrete-pump-hoisting",
+      "name_zh": "飛昇泵/混凝土泵安裝",
+      "name_en": "Concrete Pump Hoisting",
+      "category": "lifting",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-074"
+      ]
+    },
+    {
+      "id": "winch-install",
+      "name_zh": "安裝WINCH機供吊運鋁板",
+      "name_en": "Winch Installation for Panel Lifting",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-148"
+      ]
+    },
+    {
+      "id": "mewp",
+      "name_zh": "流動升降台(MEWP)",
+      "name_en": "Mobile Elevating Work Platform",
+      "category": "lifting",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-241",
+        "RA-242"
+      ]
+    },
+    {
+      "id": "temp-electrical",
+      "name_zh": "臨時電力設備安裝/改裝/拆卸",
+      "name_en": "Temporary Electrical Installation",
+      "category": "building-services",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-004"
+      ]
+    },
+    {
+      "id": "electrical-install",
+      "name_zh": "電力安裝工程",
+      "name_en": "Electrical Installation",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-027"
+      ]
+    },
+    {
+      "id": "cable-transport",
+      "name_zh": "電纜運送及安裝",
+      "name_en": "Cable Transport & Installation",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-110",
+        "RA-124"
+      ]
+    },
+    {
+      "id": "switchboard",
+      "name_zh": "電制櫃運送及安裝",
+      "name_en": "Switchboard Transport & Installation",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-125",
+        "RA-152",
+        "RA-162",
+        "RA-172"
+      ]
+    },
+    {
+      "id": "fire-services",
+      "name_zh": "消防系統/防火閘安裝",
+      "name_en": "Fire Services/Fire Damper",
+      "category": "building-services",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-020",
+        "RA-153"
+      ]
+    },
+    {
+      "id": "plumbing",
+      "name_zh": "給排水工程(水喉/地渠)",
+      "name_en": "Plumbing & Drainage",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-021"
+      ]
+    },
+    {
+      "id": "mvac-airduct",
+      "name_zh": "冷暖氣/風系統/Air Duct",
+      "name_en": "MVAC/Air Duct Installation",
+      "category": "building-services",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-038",
+        "RA-118",
+        "RA-119",
+        "RA-120"
+      ]
+    },
+    {
+      "id": "fan-ahu-transport",
+      "name_zh": "風扇及風櫃運送",
+      "name_en": "Fan & AHU Transport",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-143"
+      ]
+    },
+    {
+      "id": "lightning-protection",
+      "name_zh": "避雷針安裝",
+      "name_en": "Lightning Protection",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-199"
+      ]
+    },
+    {
+      "id": "led-panel",
+      "name_zh": "LED水下燈/資訊板",
+      "name_en": "LED Panel/Underwater Light",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-188",
+        "RA-239"
+      ]
+    },
+    {
+      "id": "mtr-diversion",
+      "name_zh": "MTR車站E&M改動",
+      "name_en": "MTR Station E&M Diversion",
+      "category": "building-services",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-232"
+      ]
+    },
+    {
+      "id": "transformer-crane",
+      "name_zh": "火牛房吊機工字鐵",
+      "name_en": "Transformer Room Crane Beam",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-087",
+        "RA-097"
+      ]
+    },
+    {
+      "id": "lift-fall-arrest-platform",
+      "name_zh": "升降機防墮安全鐵台",
+      "name_en": "Lift Fall Arrest Platform",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-123"
+      ]
+    },
+    {
+      "id": "refuse-chute",
+      "name_zh": "垃圾槽及垃圾箱安裝/拆卸",
+      "name_en": "Refuse Chute & Bin",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-088",
+        "RA-177"
+      ]
+    },
+    {
+      "id": "lighting-fixture",
+      "name_zh": "供裝燈飾",
+      "name_en": "Lighting Fixture Installation",
+      "category": "building-services",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-233"
+      ]
+    },
+    {
+      "id": "live-electrical-room",
+      "name_zh": "進入掣房/已帶電位置工作",
+      "name_en": "Entry to Electrical Rooms/Live Areas",
+      "category": "building-services",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-209",
+        "RA-221"
+      ]
+    },
+    {
+      "id": "plastering",
+      "name_zh": "泥水/批盪",
+      "name_en": "Plastering/Screeding",
+      "category": "finishing",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-094",
+        "RA-128",
+        "RA-223"
+      ]
+    },
+    {
+      "id": "painting",
+      "name_zh": "油漆工程",
+      "name_en": "Painting Works",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-145",
+        "RA-230"
+      ]
+    },
+    {
+      "id": "waterproofing",
+      "name_zh": "防水工程",
+      "name_en": "Waterproofing Works",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-086",
+        "RA-096",
+        "RA-169"
+      ]
+    },
+    {
+      "id": "aluminium-window",
+      "name_zh": "鋁窗安裝/收口泥",
+      "name_en": "Aluminium Window/Grouting",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-089",
+        "RA-091"
+      ]
+    },
+    {
+      "id": "curtain-wall",
+      "name_zh": "玻璃/幕牆系統",
+      "name_en": "Glass Wall/Curtain Wall System",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-090",
+        "RA-095",
+        "RA-166",
+        "RA-176",
+        "RA-243"
+      ]
+    },
+    {
+      "id": "marble-stone",
+      "name_zh": "雲石工程(室內/外牆/平台)",
+      "name_en": "Marble/Stone Works",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-167",
+        "RA-198",
+        "RA-206",
+        "RA-237",
+        "RA-240"
+      ]
+    },
+    {
+      "id": "aluminium-feature",
+      "name_zh": "鋁飾面/百頁/Grille",
+      "name_en": "Aluminium Feature/Louvre/Grille",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-157",
+        "RA-182",
+        "RA-185"
+      ]
+    },
+    {
+      "id": "external-aluminium-panel",
+      "name_zh": "外牆鋁板安裝",
+      "name_en": "External Aluminium Panel Installation",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-219"
+      ]
+    },
+    {
+      "id": "glass-balustrade",
+      "name_zh": "玻璃欄河",
+      "name_en": "Glass Balustrade",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-099"
+      ]
+    },
+    {
+      "id": "interior-fitout",
+      "name_zh": "室內裝修(平台/單位)",
+      "name_en": "Interior Fit-out",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-194",
+        "RA-236"
+      ]
+    },
+    {
+      "id": "door-ceiling",
+      "name_zh": "門及天花安裝",
+      "name_en": "Door & Ceiling Installation",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-231"
+      ]
+    },
+    {
+      "id": "wind-ceiling",
+      "name_zh": "防風天花",
+      "name_en": "Wind-rated Ceiling",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-156",
+        "RA-214"
+      ]
+    },
+    {
+      "id": "fireproof-board",
+      "name_zh": "防火板工程",
+      "name_en": "Fireproof Board",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-160",
+        "RA-213",
+        "RA-224",
+        "RA-235"
+      ]
+    },
+    {
+      "id": "kitchen-cabinet",
+      "name_zh": "廚櫃供應及安裝",
+      "name_en": "Kitchen Cabinet Supply/Install",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-112"
+      ]
+    },
+    {
+      "id": "bathroom-screen",
+      "name_zh": "廁所浴屏",
+      "name_en": "Bathroom Shower Screen",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-117"
+      ]
+    },
+    {
+      "id": "permanent-ironmongery",
+      "name_zh": "室內/會所永久鐵器",
+      "name_en": "Interior/Clubhouse Ironmongery",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-100",
+        "RA-229"
+      ]
+    },
+    {
+      "id": "trellis-pergola",
+      "name_zh": "花架/Trellis鐵器",
+      "name_en": "Trellis/Pergola Ironwork",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-193"
+      ]
+    },
+    {
+      "id": "gms-anchors",
+      "name_zh": "GMS預留碼",
+      "name_en": "GMS Embedded Anchors",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-098",
+        "RA-134",
+        "RA-181"
+      ]
+    },
+    {
+      "id": "blockwall-steel",
+      "name_zh": "安裝磚架",
+      "name_en": "Blockwall Steel Frame",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-163"
+      ]
+    },
+    {
+      "id": "signboard",
+      "name_zh": "燈牌/Signboard",
+      "name_en": "Signboard Installation",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-192"
+      ]
+    },
+    {
+      "id": "artwork",
+      "name_zh": "藝術品安裝",
+      "name_en": "Artwork Installation",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-234"
+      ]
+    },
+    {
+      "id": "playground-equip",
+      "name_zh": "遊樂場設施",
+      "name_en": "Playground Equipment",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-217"
+      ]
+    },
+    {
+      "id": "green-wall",
+      "name_zh": "綠化企牆",
+      "name_en": "Green Wall Installation",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-186"
+      ]
+    },
+    {
+      "id": "cleaning-tank-tile",
+      "name_zh": "清洗水缸/地台瓦件",
+      "name_en": "Water Tank/Floor Tile Cleaning",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-215",
+        "RA-238"
+      ]
+    },
+    {
+      "id": "false-ceiling",
+      "name_zh": "進入假天花工作",
+      "name_en": "Working Above False Ceiling",
+      "category": "finishing",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-210",
+        "RA-222"
+      ]
+    },
+    {
+      "id": "metal-scaffolding",
+      "name_zh": "金屬棚架搭建/拆卸",
+      "name_en": "Metal Scaffolding Erection/Dismantling",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-009",
+        "RA-023",
+        "RA-040",
+        "RA-168",
+        "RA-179"
+      ]
+    },
+    {
+      "id": "worker-cage",
+      "name_zh": "搭建/拆卸工人籠",
+      "name_en": "Worker Cage Erection/Dismantling",
+      "category": "others",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-079"
+      ]
+    },
+    {
+      "id": "material-rack",
+      "name_zh": "材料架搭建/拆卸",
+      "name_en": "Material Rack Erection/Dismantling",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-075",
+        "RA-080"
+      ]
+    },
+    {
+      "id": "hoarding",
+      "name_zh": "圍街板(安裝/更改/拆卸/美化)",
+      "name_en": "Hoarding/Fencing",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-024",
+        "RA-025",
+        "RA-042",
+        "RA-116",
+        "RA-147",
+        "RA-184",
+        "RA-195",
+        "RA-226"
+      ]
+    },
+    {
+      "id": "uss-hoarding-drainage",
+      "name_zh": "USS圍街及造渠",
+      "name_en": "USS Hoarding & Drainage",
+      "category": "others",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-061"
+      ]
+    },
+    {
+      "id": "temp-vehicle-access",
+      "name_zh": "臨時車輛通道/防撞欄",
+      "name_en": "Temporary Vehicular Access/Crash Barrier",
+      "category": "others",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-026",
+        "RA-046"
+      ]
+    },
+    {
+      "id": "dismantle-temp-platform",
+      "name_zh": "拆卸臨時鐵台/鐵板",
+      "name_en": "Dismantle Temporary Steel Platforms/Plates",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-138",
+        "RA-140",
+        "RA-146",
+        "RA-158",
+        "RA-159",
+        "RA-170",
+        "RA-178"
+      ]
+    },
+    {
+      "id": "temp-floor-cover",
+      "name_zh": "臨時地台封吼",
+      "name_en": "Temporary Floor Opening Cover",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-141"
+      ]
+    },
+    {
+      "id": "confined-space",
+      "name_zh": "密閉空間工作",
+      "name_en": "Confined Space Entry",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-165",
+        "RA-211",
+        "RA-227"
+      ]
+    },
+    {
+      "id": "work-at-height",
+      "name_zh": "離地工作(通用)",
+      "name_en": "Work at Height (Generic)",
+      "category": "others",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-030",
+        "RA-048"
+      ]
+    },
+    {
+      "id": "general-labour",
+      "name_zh": "雜項/清理垃圾",
+      "name_en": "General Labour/Waste Clearance",
+      "category": "others",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-028"
+      ]
+    },
+    {
+      "id": "landscaping",
+      "name_zh": "園藝/回泥/種樹/植物",
+      "name_en": "Landscaping/Backfill/Planting",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-174",
+        "RA-196",
+        "RA-203",
+        "RA-212",
+        "RA-220"
+      ]
+    },
+    {
+      "id": "uss-flood-gate",
+      "name_zh": "USS防洪閘",
+      "name_en": "USS Flood Gate Installation",
+      "category": "others",
+      "risk_level": "C",
+      "ra_references": [
+        "RA-218"
+      ]
+    },
+    {
+      "id": "uss-ceiling-mod",
+      "name_zh": "USS天花鋼架修改",
+      "name_en": "USS Ceiling Steel Frame Modification",
+      "category": "others",
+      "risk_level": "B",
+      "ra_references": [
+        "RA-228"
+      ]
+    },
+    {
+      "id": "static-load-test",
+      "name_zh": "靜力載荷試驗(USS/UPW)",
+      "name_en": "Static Load Test (USS/UPW)",
+      "category": "others",
+      "risk_level": "A",
+      "ra_references": [
+        "RA-049",
+        "RA-050"
+      ]
+    }
+  ]
+}

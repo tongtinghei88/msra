@@ -1,5 +1,6 @@
 const RISK_LABELS = { low: '低', medium: '中', high: '高', extreme: '極高' };
 const RISK_COLORS = { low: 'risk-low', medium: 'risk-medium', high: 'risk-high', extreme: 'risk-extreme' };
+function crToNum(cr) { const map = { A:1, B:2, C:3, D:4, E:5 }; return typeof cr==='string' ? (map[cr]||3) : (cr||3); }
 
 function calcRiskLevel(likelihood, severity) {
   const score = likelihood * severity;
@@ -250,6 +251,115 @@ if (document.getElementById('assessmentForm')) {
   });
   templateModal?.addEventListener('click', e => {
     if (e.target === templateModal) templateModal.style.display = 'none';
+  });
+
+  // Process template modal
+  let processesIndex = null;
+  const processModal = document.getElementById('processModal');
+  const CAT_LABELS = {
+    structural: '結構', lifting: '吊重/機械設備', 'building-services': '屋宇設備',
+    finishing: '泥水/裝修', others: '其他'
+  };
+
+  async function loadProcessIndex() {
+    if (processesIndex) return processesIndex;
+    try {
+      const resp = await fetch('data/processes/index.json');
+      processesIndex = await resp.json();
+      return processesIndex;
+    } catch (e) {
+      console.error('Failed to load process index', e);
+      return null;
+    }
+  }
+
+  function renderProcessList(filter = 'all', search = '') {
+    const index = processesIndex;
+    if (!index) {
+      document.getElementById('processList').innerHTML = '<p class="text-muted">載入工序庫失敗</p>';
+      return;
+    }
+    const s = search.toLowerCase();
+    let allProcesses = index.processes || [];
+    if (filter !== 'all') {
+      allProcesses = allProcesses.filter(p => p.category === filter);
+    }
+    if (s) {
+      allProcesses = allProcesses.filter(p => p.name_zh.toLowerCase().includes(s) || p.name_en.toLowerCase().includes(s));
+    }
+    const list = document.getElementById('processList');
+    if (allProcesses.length === 0) {
+      list.innerHTML = '<p class="text-muted">無符合條件的工序</p>';
+      return;
+    }
+    list.innerHTML = allProcesses.map(p => `
+      <div class="template-item process-item" data-id="${p.id}" data-cat="${p.category}">
+        <h4>${escapeHtml(p.name_zh)}</h4>
+        <p>${escapeHtml(p.name_en)}</p>
+        <span class="badge">${CAT_LABELS[p.category] || p.category}</span>
+        ${p.ra_references ? `<span class="badge" style="margin-left:4px">RA: ${p.ra_references.slice(0,3).join(', ')}${p.ra_references.length > 3 ? '...' : ''}</span>` : ''}
+      </div>
+    `).join('');
+    list.querySelectorAll('.process-item').forEach(el => {
+      el.addEventListener('click', async () => {
+        const catKey = el.dataset.cat;
+        const pid = el.dataset.id;
+        try {
+          const resp = await fetch(`data/processes/${catKey}/${pid}.json`);
+          if (!resp.ok) throw new Error('File not found');
+          const processData = await resp.json();
+          document.getElementById('itemsBody').innerHTML = '';
+          (processData.work_steps || []).forEach(step => {
+            (step.hazards || []).forEach(h => {
+              const item = {
+                activity: step.step,
+                hazard: h.hazard,
+                likelihood: h.lr || 1,
+                severity: crToNum(h.cr),
+                controlMeasures: Array.isArray(h.control_measures) ? h.control_measures.join('\n') : (h.control_measures || ''),
+                residualLikelihood: 1,
+                residualSeverity: Math.max(1, crToNum(h.cr) - 1),
+                responsible: ''
+              };
+              const tr = renderItemsTableRow(item, itemsBody.children.length);
+              itemsBody.appendChild(tr);
+            });
+          });
+          if (itemsBody.children.length === 0) addItemRow();
+          processModal.style.display = 'none';
+        } catch (e) {
+          alert('該工序模板尚未建立詳細資料，請使用空白表單');
+        }
+      });
+    });
+  }
+
+  document.getElementById('loadProcessBtn')?.addEventListener('click', async () => {
+    processModal.style.display = 'flex';
+    document.getElementById('processList').innerHTML = '<p class="text-muted">載入中...</p>';
+    await loadProcessIndex();
+    renderProcessList();
+  });
+
+  document.querySelectorAll('#processModal .process-cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#processModal .process-cat-btn').forEach(b => {
+        b.className = 'btn btn-sm btn-outline process-cat-btn';
+      });
+      btn.className = 'btn btn-sm btn-primary process-cat-btn';
+      renderProcessList(btn.dataset.cat, document.getElementById('processSearchInput')?.value || '');
+    });
+  });
+
+  document.getElementById('processSearchInput')?.addEventListener('input', (e) => {
+    const activeCat = document.querySelector('#processModal .btn-primary.process-cat-btn')?.dataset?.cat || 'all';
+    renderProcessList(activeCat, e.target.value);
+  });
+
+  const processModalClose = processModal?.querySelector('.modal-close');
+  processModalClose?.addEventListener('click', () => { processModal.style.display = 'none'; });
+  processModal?.addEventListener('click', e => {
+    if (e.target === processModal) processModal.style.display = 'none';
   });
 
   // Set today's date
