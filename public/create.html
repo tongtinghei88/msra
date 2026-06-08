@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新增風險評估 - 地盤風險評估系統</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">地盤風險評估系統</a>
+      <div class="nav-links">
+        <a href="index.html">評估列表</a>
+        <a href="create.html" class="active">新增評估</a>
+        <a href="templates.html">範本管理</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1 id="formTitle">新增風險評估</h1>
+      <div>
+        <button id="loadTemplateBtn" class="btn btn-outline">從範本載入</button>
+      </div>
+    </header>
+
+    <form id="assessmentForm">
+      <input type="hidden" id="assessmentId" value="">
+
+      <section class="card">
+        <h2>專案資料</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="projectName">專案名稱</label>
+            <input type="text" id="projectName" class="input" required placeholder="例如：上水地盤">
+          </div>
+          <div class="form-group">
+            <label for="projectLocation">地點</label>
+            <input type="text" id="projectLocation" class="input" placeholder="例如：上水">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="assessor">評估人員</label>
+            <input type="text" id="assessor" class="input" required>
+          </div>
+          <div class="form-group">
+            <label for="assessmentDate">日期</label>
+            <input type="date" id="assessmentDate" class="input" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="projectDescription">專案描述</label>
+          <textarea id="projectDescription" class="input" rows="3" placeholder="簡述工程內容"></textarea>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>風險矩陣</h2>
+        <p class="text-muted">風險等級 = 可能性 × 嚴重性。低 (1-4) | 中 (5-9) | 高 (10-16) | 極高 (17-25)</p>
+        <div class="risk-matrix-legend">
+          <span class="risk-badge risk-low">低 1-4</span>
+          <span class="risk-badge risk-medium">中 5-9</span>
+          <span class="risk-badge risk-high">高 10-16</span>
+          <span class="risk-badge risk-extreme">極高 17-25</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>危害辨識</h2>
+          <button type="button" id="addItemBtn" class="btn btn-primary btn-sm">+ 新增項目</button>
+        </div>
+        <div class="table-responsive">
+          <table id="itemsTable" class="table">
+            <thead>
+              <tr>
+                <th style="width:60px">#</th>
+                <th>工作步驟 / 活動</th>
+                <th>潛在危害</th>
+                <th style="width:70px">可能性</th>
+                <th style="width:70px">嚴重性</th>
+                <th style="width:90px">風險等級</th>
+                <th>控制措施</th>
+                <th style="width:70px">剩餘可能性</th>
+                <th style="width:70px">剩餘嚴重性</th>
+                <th style="width:90px">剩餘風險</th>
+                <th>負責人</th>
+                <th style="width:40px"></th>
+              </tr>
+            </thead>
+            <tbody id="itemsBody">
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-lg" id="saveBtn">儲存評估</button>
+        <a href="index.html" class="btn btn-outline">取消</a>
+      </div>
+    </form>
+  </main>
+
+  <div id="templateModal" class="modal" style="display:none">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>選擇範本</h2>
+      <div id="templateList" class="template-list">
+        <p class="text-muted">載入中...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="js/firebase-init.js"></script>
+  <script src="js/risk-assessment.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>檢視評估 - 地盤風險評估系統</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">地盤風險評估系統</a>
+      <div class="nav-links">
+        <a href="index.html">評估列表</a>
+        <a href="create.html">新增評估</a>
+        <a href="templates.html">範本管理</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>檢視風險評估</h1>
+      <div>
+        <button id="editBtn" class="btn btn-outline">編輯</button>
+        <button id="copyBtn" class="btn btn-outline">複製</button>
+        <button id="deleteBtn" class="btn btn-danger">刪除</button>
+        <button id="printBtn" class="btn btn-primary">列印 / 匯出 PDF</button>
+      </div>
+    </header>
+
+    <section class="card" id="projectInfo">
+      <p class="text-muted">載入中...</p>
+    </section>
+
+    <section class="card">
+      <h2>危害辨識與風險評估</h2>
+      <div class="table-responsive">
+        <table class="table" id="viewItemsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>工作步驟 / 活動</th>
+              <th>潛在危害</th>
+              <th>可能性</th>
+              <th>嚴重性</th>
+              <th>風險等級</th>
+              <th>控制措施</th>
+              <th>剩餘可能性</th>
+              <th>剩餘嚴重性</th>
+              <th>剩餘風險</th>
+              <th>負責人</th>
+            </tr>
+          </thead>
+          <tbody id="viewItemsBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="js/firebase-init.js"></script>
+  <script src="js/risk-assessment.js"></script>
+</body>
+</html>

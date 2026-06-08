@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>範本管理 - 地盤風險評估系統</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">地盤風險評估系統</a>
+      <div class="nav-links">
+        <a href="index.html">評估列表</a>
+        <a href="create.html">新增評估</a>
+        <a href="templates.html" class="active">範本管理</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>範本管理</h1>
+      <button id="addTemplateBtn" class="btn btn-primary">+ 新增範本</button>
+    </header>
+
+    <section class="filters">
+      <input type="text" id="templateSearch" placeholder="搜尋範本..." class="input">
+      <select id="categoryFilter" class="input">
+        <option value="all">全部分類</option>
+        <option value="general">一般工程</option>
+        <option value="demolition">拆卸工程</option>
+        <option value="excavation">挖掘工程</option>
+        <option value="scaffolding">棚架工程</option>
+        <option value="electrical">電力工作</option>
+        <option value="lifting">吊運作業</option>
+        <option value="confined">密閉空間</option>
+        <option value="height">高空工作</option>
+      </select>
+    </section>
+
+    <section id="templatesGrid" class="card-grid">
+      <p class="text-muted">載入中...</p>
+    </section>
+  </main>
+
+  <div id="templateFormModal" class="modal" style="display:none">
+    <div class="modal-content modal-lg">
+      <span class="modal-close">&times;</span>
+      <h2 id="templateModalTitle">新增範本</h2>
+      <form id="templateForm">
+        <input type="hidden" id="templateId" value="">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="templateName">範本名稱</label>
+            <input type="text" id="templateName" class="input" required>
+          </div>
+          <div class="form-group">
+            <label for="templateCategory">分類</label>
+            <select id="templateCategory" class="input">
+              <option value="general">一般工程</option>
+              <option value="demolition">拆卸工程</option>
+              <option value="excavation">挖掘工程</option>
+              <option value="scaffolding">棚架工程</option>
+              <option value="electrical">電力工作</option>
+              <option value="lifting">吊運作業</option>
+              <option value="confined">密閉空間</option>
+              <option value="height">高空工作</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="templateDescription">描述</label>
+          <textarea id="templateDescription" class="input" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label>範本項目（危害辨識）</label>
+          <button type="button" id="addTemplateItemBtn" class="btn btn-sm btn-outline">+ 新增項目</button>
+        </div>
+        <div class="table-responsive">
+          <table class="table" id="templateItemsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>工作步驟</th>
+                <th>潛在危害</th>
+                <th>控制措施</th>
+                <th style="width:40px"></th>
+              </tr>
+            </thead>
+            <tbody id="templateItemsBody"></tbody>
+          </table>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">儲存範本</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="js/firebase-init.js"></script>
+  <script src="js/templates.js"></script>
+</body>
+</html>
