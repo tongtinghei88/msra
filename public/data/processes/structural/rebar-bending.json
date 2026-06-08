@@ -1,0 +1,49 @@
+{
+  "id": "rebar-bending",
+  "name_zh": "屈鐵 (鋼筋彎曲)",
+  "name_en": "Rebar Bending",
+  "category": "structural",
+  "ra_references": [
+    "RA 01 - A030 (屈鐵風險評估) - .doc unreadable, PDF scanned"
+  ],
+  "risk_matrix": {
+    "lr_scale": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cr_scale": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "屈鐵 (鋼筋彎曲)",
+      "hazards": [
+        {
+          "hazard": "不正確人力搬運引致扭傷",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "採用正確搬運姿勢及方法",
+            "安排足夠人手進行物料搬運",
+            "使用機械輔助搬運"
+          ]
+        }
+      ]
+    }
+  ]
+}

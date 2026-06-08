@@ -1,0 +1,300 @@
+{
+  "id": "els-dismantling",
+  "name_zh": "拆卸臨時工字鐵台及ELS",
+  "name_en": "Dismantling of Temporary Steel Platform & ELS",
+  "category": "structural",
+  "ra_references": [
+    "RA 03 - A030"
+  ],
+  "risk_matrix": {
+    "lr_scale": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cr_scale": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "Use of flame cutting for temp steel platform & ELS disassembly",
+      "hazards": [
+        {
+          "hazard": "Workers burnt by flying sparks",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Workers wear long sleeve clothing, leather gloves and flame cutting mask for body protection",
+            "Use flame-resistant plating to shield off flying sparks (especially at areas close to Logos Academy)"
+          ]
+        },
+        {
+          "hazard": "Inhale of metallic fumes",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Provide blower fan to ventilate toxic fumes",
+            "Provide workers with N95 mask"
+          ]
+        },
+        {
+          "hazard": "Explosion due to gas leakage",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area to be fenced-off with warning signs displayed.",
+            "Flame cutting set must be equipped with flashback arrestor, non-return valve, pressure regulator with pressure gauges",
+            "Daily checking for gas leakage using soap water",
+            "Replace any worn out & damaged gas hose",
+            "All flame cutting  cylinders must be secured on trolley or cages & isolated from heat source",
+            "Safety personnel enforce hot work permit system",
+            "Only workers with valid certificate & appointed by site safety department are allowed to conduct flame cutting",
+            "Valve keys of pressure regulator must not be left unattended at flame cutting set.",
+            "Cover cylinders with canvas to avoid direct sunlight"
+          ]
+        },
+        {
+          "hazard": "eye discomfort and burns from the intense light and heat",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Use protective eyewear (flame cutting mask with polarized glasses)",
+            "Set up rest time for workers (5 mins/ hour)",
+            "Stop work immediately when workers feel uncomfortable for their eyes",
+            "Shield off area with non-reflective paint"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting dismantled section of steel platform & ELS member using tower crane",
+      "hazards": [
+        {
+          "hazard": "Damage to tower crane",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "No over-capacity lifting",
+            "Do not temper any safety device",
+            "Ensure clear lifting route",
+            "No lifting during heavy rain, typhoon signal No. 3 or above",
+            "Check load chart to ensure sufficient lifting capacity",
+            "Check crane in safe working order before work commencement",
+            "Stop lifting when abnormalities are observed.",
+            "Do not use crane for pulling purpose."
+          ]
+        },
+        {
+          "hazard": "Damage of lifting Gear",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All Lifting Gear must process valid certificate",
+            "Use color code system",
+            "Daily checking of all LG before use",
+            "Proper rigging method to be used",
+            "Discard all damaged LG, especially webbing sling & steel wires",
+            "Ensure ELS are fully disengaged before lifting."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting dismantled section of steel platform & ELS member using tower crane (continue)",
+      "hazards": [
+        {
+          "hazard": "Tower crane collapse",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Tower crane & its operator must process valid certificate.",
+            "Operator perform daily check and to fill in LA/LG Form 1 and & in-house checklist",
+            "No over-capacity lifting",
+            "Do not temper any safety device on tower crane",
+            "Ensure clearance of lifting path",
+            "Do not use tower crane for pulling purpose",
+            "Lifting zone to be left fenced-off and with warning size displayed.",
+            "Do not use tower crane for pulling purpose",
+            "Ensure ELS are fully disengaged before lifting."
+          ]
+        },
+        {
+          "hazard": "Injury caused by unauthorized entry of fence-off area",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area to be fenced-off with warning signs displayed",
+            "Work must be stopped upon unauthorized entry is found",
+            "Site personnel to confirm no other works to be performed within fence-off area。",
+            "Site foreman to be on watch to prohibit unauthorized entry"
+          ]
+        },
+        {
+          "hazard": "Workers hit by suspended load",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Use double-end guide rope",
+            "Do not use crane for pulling purpose",
+            "Workers must not stand directly in front of the path of suspended ELS member",
+            "No lifting during heavy rain, typhoon signal No. 3 or above",
+            "All personnel (crane operator, banksman, rigger) must process valid certificates",
+            "No sudden movement of crane during lifting",
+            "Mark out all “dead zone” in operation area and inform all workers during pre-work safety briefing.",
+            "Blow whistle to inform all workers before lifting",
+            "Place solid wooden blocks at unloading area to avoid toes and fingers being struck by suspended ELS ."
+          ]
+        },
+        {
+          "hazard": "Injury caused by unauthorized entry of fence-off area",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area to be fenced-off with warning signs displayed",
+            "Work must be stopped upon unauthorized entry is found",
+            "Site personnel to confirm no other works to be performed within fence-off area。",
+            "Site foreman to be on watch to prohibit unauthorized entry"
+          ]
+        },
+        {
+          "hazard": "Fall of suspended load",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All LG must proves valid certificate",
+            "All personnel (crane operator, banksman, rigger) must process valid certificates for their assigned tasks",
+            "Use guide ropes",
+            "Daily checking of all LG before use",
+            "Do not use LG for pulling purpose",
+            "No lifting during heavy rain, typhoon signal No. 3 & strong wind over 13 m/s",
+            "Ensure clearance of lifting path.",
+            "Pre-work checking of walkie-talkie for effective communication",
+            "All suspended loads are hoist up at about 1m from ground to check for entanglement and secure rigging",
+            "Use double wrapper rigging",
+            "Lifting supervisors to supervise all lifting operations.",
+            "Blow whistle to inform all workers",
+            "At least 40mm clearance has to be made between edge of I-beam & edge of lifting eye to avoid buckling",
+            "Use material skip to hoist small objects (<1m)"
+          ]
+        },
+        {
+          "hazard": "Poor visibility",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Provide sufficient lighting during operation",
+            "Disassembly work to be stopped before 8am & after 6pm during short daylight season"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Dismantling of ELS trust & temp. steel platform using mobile working platform",
+      "hazards": [
+        {
+          "hazard": "Injury of personnel due to unauthorized use of mobile working platform",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Only personnel trained by mobile working platform supplier and to be appointed by site are allowed to use mobile working platform",
+            "Do not modify mobile working platform",
+            "Do not attempt to repair mobile working platform when malfunction occurs",
+            "Fence off working area of mobile working platform with warning signs displayed.",
+            "Keys must be removed when mobile working platform is not in use."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Dismantling of ELS trust & temp. steel platform using mobile working platform (continue)",
+      "hazards": [
+        {
+          "hazard": "Collapse of mobile working platform",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area of mobile working platform to be fenced-off with warning signs displayed.",
+            "Identity area of movement for mobile working platform before work is commenced.",
+            "All workers must wear full body harness with double lanyard.",
+            "All mobile working platform process valid LA/LG Form 4/5",
+            "Mobile working platform to be inspected by operator and to sign LA/LG Form 1",
+            "List SWL & maximum number of person permitted.",
+            "Do not temper any safety device on mobile working platform",
+            "Only use mobile platform on level ground.",
+            "Do not use mobile platform for pulling or tugging purpose.",
+            "Ensure mobile working platform is lowered and keys removed when not in use.",
+            "Do not move mobile working platform when the platform is raised",
+            "Use ropes to secure raised platform"
+          ]
+        },
+        {
+          "hazard": "Collapse of mobile working platform",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Only workers trained by mobile working platform provider are allowed to operate the particular type of platform.",
+            "Displayed the name list of qualified operators on the mobile working platform"
+          ]
+        },
+        {
+          "hazard": "Person fall from height",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Steel platform & ELS disassembly fenced-off with warning signs displayed.",
+            "All workers must wear full body harness with fall arrestor and attached to independent life line anchored to secure point",
+            "When removing sheet pile decking on platform, pre-fabricate points on sheet pile to allow fall arrest systems to be attached",
+            "Each fall arrest system is for one worker only",
+            "Use mobile working platform for ELS disassembly works",
+            "Workers must not over extend their bodies over mobile working platform",
+            "DO NOT walk or sit on I-beam"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 {
-  "description": "工作風險評估知識庫 — 工序總目錄 (共109項工序, 5大分類)",
-  "total_processes": 109,
+  "description": "工作風險評估知識庫 — 工序總目錄 (NKIL6568 + A203A + A030 共122項工序)",
+  "total_processes": 122,
   "categories": {
     "structural": {
       "name_zh": "結構",
       "name_en": "Structural",
-      "count": 34
+      "count": 42
     },
     "lifting": {
       "name_zh": "吊重/機械設備",
       "name_en": "Lifting",
-      "count": 19
+      "count": 21
     },
     "building-services": {
       "name_zh": "屋宇設備",
@@ -25,7 +25,7 @@
     "others": {
       "name_zh": "其他",
       "name_en": "Others",
-      "count": 15
+      "count": 17
     }
   },
   "processes": [
@@ -1253,6 +1253,123 @@
         "RA-049",
         "RA-050"
       ]
+    },
+    {
+      "id": "tree-removal",
+      "name_zh": "清除樹木/樹藝工作",
+      "name_en": "Tree Removal / Arboriculture Works",
+      "category": "others",
+      "risk_level": "B",
+      "source": "A203A-RA01",
+      "ra_references": ["A203A-RA01"]
+    },
+    {
+      "id": "predrill",
+      "name_zh": "預鑽孔工程",
+      "name_en": "Predrill Works",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A203A-RA03",
+      "ra_references": ["A203A-RA03"]
+    },
+    {
+      "id": "backfill-compaction",
+      "name_zh": "回填及壓實",
+      "name_en": "Backfill and Compaction",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A203A-RA06",
+      "ra_references": ["A203A-RA06"]
+    },
+    {
+      "id": "sheet-pile-excavation-shoring",
+      "name_zh": "打閘板、挖掘和裝頂及拆除閘板",
+      "name_en": "Sheet Pile, Excavation & Shoring",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A203A-RA07",
+      "ra_references": ["A203A-RA07"]
+    },
+    {
+      "id": "cutting-hpile",
+      "name_zh": "切割H工字鋼樁",
+      "name_en": "Cutting H-Pile",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A203A-RA09",
+      "ra_references": ["A203A-RA09"]
+    },
+    {
+      "id": "pier-construction",
+      "name_zh": "建造橋墩",
+      "name_en": "Pier Construction",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A203A-RA10",
+      "ra_references": ["A203A-RA10"]
+    },
+    {
+      "id": "tail-well-connection",
+      "name_zh": "接駁尾井",
+      "name_en": "Tail Well Connection",
+      "category": "structural",
+      "risk_level": "A",
+      "source": "A203A-RA12",
+      "ra_references": ["A203A-RA12"]
+    },
+    {
+      "id": "asphalt-paving",
+      "name_zh": "鋪瀝青路面",
+      "name_en": "Asphalt Paving",
+      "category": "others",
+      "risk_level": "B",
+      "source": "A203A-RA13",
+      "ra_references": ["A203A-RA13"]
+    },
+    {
+      "id": "footbridge-lifting",
+      "name_zh": "吊運行人天橋",
+      "name_en": "Footbridge Lifting",
+      "category": "lifting",
+      "risk_level": "A",
+      "source": "A203A-RA14",
+      "ra_references": ["A203A-RA14"]
+    },
+    {
+      "id": "steel-ibeam-storage",
+      "name_zh": "存放及吊運工字鐵",
+      "name_en": "Steel I-Beam Storage & Lifting",
+      "category": "lifting",
+      "risk_level": "B",
+      "source": "A203A-RA04",
+      "ra_references": ["A203A-RA04"]
+    },
+    {
+      "id": "rebar-bending",
+      "name_zh": "屈鐵 (鋼筋彎曲)",
+      "name_en": "Rebar Bending",
+      "category": "structural",
+      "risk_level": "C",
+      "source": "A030-RA01",
+      "ra_references": ["A030-RA01"]
+    },
+    {
+      "id": "els-dismantling",
+      "name_zh": "拆卸臨時工字鐵台及ELS",
+      "name_en": "ELS & Temporary Steel Platform Dismantling",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A030-RA03",
+      "ra_references": ["A030-RA03"]
+    },
+    {
+      "id": "building-superstructure",
+      "name_zh": "大樓上蓋結構施工(模板/紮鐵/落石矢)",
+      "name_en": "Building Superstructure Construction",
+      "category": "structural",
+      "risk_level": "B",
+      "source": "A030-RA05",
+      "ra_references": ["A030-RA05"]
     }
   ]
 }

@@ -1,0 +1,879 @@
+{
+  "id": "building-superstructure",
+  "name_zh": "大樓上蓋結構施工(模板/紮鐵/落石矢)",
+  "name_en": "Building Superstructure Construction (Formwork/Rebar/Concrete)",
+  "category": "structural",
+  "ra_references": [
+    "RA 05 - A030"
+  ],
+  "risk_matrix": {
+    "lr_scale": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cr_scale": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "Lorries delivery materials (timber, false work components, misc. materials) to site",
+      "hazards": [
+        {
+          "hazard": "Collision with public road vehicles & pedestrians",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Assign traffic controller to coordinate site traffic & passer-by",
+            "To ensure no parking along site entrance",
+            "Delivery vehicle drivers should familiarize with routing",
+            "Avoid transportation during peak hours (07:50-08:15, 15:45-16:45)",
+            "Permit system enforced to control traffic flow"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting formwork material using tower crane",
+      "hazards": [
+        {
+          "hazard": "Damage to tower crane",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "No over-capacity lifting",
+            "Do not temper any safety device",
+            "Ensure clear lifting route",
+            "No lifting during heavy rain, typhoon signal No. 3 or above",
+            "Check load chart to ensure sufficient lifting capacity",
+            "Check crane in safe working order before work commencement",
+            "Stop lifting when abnormalities are observed.",
+            "Do not use crane for pulling purpose."
+          ]
+        },
+        {
+          "hazard": "Damage of lifting Gear",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All Lifting Gear must process valid certificate",
+            "Use color code system",
+            "Daily checking of all LG before use",
+            "Proper rigging method to be used",
+            "Discard all damaged LG, especially webbing sling & steel wires",
+            "Ensure ELS are fully disengaged before lifting."
+          ]
+        },
+        {
+          "hazard": "Tower crane collapse",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Tower crane & its operator must process valid certificate.",
+            "Operator perform daily check and to fill in LA/LG Form 1 and & in-house checklist",
+            "No over-capacity lifting",
+            "Do not temper any safety device on tower crane",
+            "Ensure clearance of lifting path",
+            "Do not use tower crane for pulling purpose",
+            "Lifting zone to be left fenced-off and with warning size displayed.",
+            "Do not use tower crane for pulling purpose",
+            "Ensure ELS are fully disengaged before lifting."
+          ]
+        },
+        {
+          "hazard": "Injury caused by unauthorized entry of fence-off area",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area to be fenced-off with warning signs displayed",
+            "Work must be stopped upon unauthorized entry is found",
+            "Site personnel to confirm no other works to be performed within fence-off area。",
+            "Site foreman to be on watch to prohibit unauthorized entry"
+          ]
+        },
+        {
+          "hazard": "Workers hit by suspended load",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Use double-end guide rope",
+            "Do not use crane for pulling purpose",
+            "Workers must not stand directly in front of the path of suspended load",
+            "No lifting during heavy rain, typhoon signal No. 3 or above",
+            "All personnel (crane operator, banksman, rigger) must process valid certificates",
+            "No sudden movement of crane during lifting",
+            "Mark out all “dead zone” in operation area and inform all workers during pre-work safety briefing.",
+            "Blow whistle to inform all workers before lifting",
+            "Place solid wooden blocks at unloading area to avoid toes and fingers being struck by suspended load"
+          ]
+        },
+        {
+          "hazard": "Injury caused by unauthorized entry of fence-off area",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Operation area to be fenced-off with warning signs displayed",
+            "Work must be stopped upon unauthorized entry is found",
+            "Site personnel to confirm no other works to be performed within fence-off area。",
+            "Site foreman to be on watch to prohibit unauthorized entry"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting formwork material using tower crane (continue)",
+      "hazards": [
+        {
+          "hazard": "Fall of suspended load",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All LG must proves valid certificate",
+            "All personnel (crane operator, banksman, rigger) must process valid certificates for their assigned tasks",
+            "Use guide ropes",
+            "Daily checking of all LG before use",
+            "Do not use LG for pulling purpose",
+            "No lifting during heavy rain, typhoon signal No. 3",
+            "Ensure clearance of lifting path.",
+            "Pre-work checking of walkie-talkie for effective communication",
+            "All suspended loads are hoist up at about 1m from ground to check for entanglement and secure rigging",
+            "Use double wrapper rigging",
+            "Lifting supervisors to supervise all lifting operations.",
+            "Blow whistle to inform all workers",
+            "Use material skip to hoist small objects (<1m)"
+          ]
+        },
+        {
+          "hazard": "Poor visibility",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Provide sufficient lighting during operation",
+            "Disassembly work to be stopped before 8am & after 6pm during short daylight season"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "False work assembly",
+      "hazards": [
+        {
+          "hazard": "Fall of person",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All workers must wear full body harness with double lanyard and attached to independent life line anchored to secure point",
+            "False work ladder installed  in each level of false work for access and egress",
+            "Independent life line to be pre- installed at false walk assembly area for attachment of safety harness",
+            "Sufficient metal planks made ready to paving on top of each layer of false work",
+            "All cross members of false work must be secured before next layer can be erected.",
+            "False work erection must be performed by skilled workers with sufficient experience."
+          ]
+        },
+        {
+          "hazard": "Collapse of false work",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All false work design must be checked by RSE",
+            "False work must be erected according to approved method statement and design calculation.",
+            "All propping & pads must be installed properly",
+            "All cross members must be secured install and cannot be removed at will",
+            "No loading on false work is allowed until certified by structural engineers.",
+            "Workers not to stay in false work assembly area."
+          ]
+        },
+        {
+          "hazard": "Workers fall from edges of  false work",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Fencing poles with attach points to be installed before form work is installed.",
+            "Floor edge fencing must follow Labour Department regulations.",
+            "No workers can remove any floor edge fencing without prior approval from foreman.",
+            "Provide access with twin hand rails and to be fixed at working floor"
+          ]
+        },
+        {
+          "hazard": "Workers fall from manhole",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "For manholes used for material transfer, provide portable covers to cover manholes when not used.",
+            "Fence out all manholes with warning signs displayed."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Use of sawing bench",
+      "hazards": [
+        {
+          "hazard": "Fingers cut by rotating blade",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Provide pushing stick",
+            "Sawing bench must have proper guarding and riving knife.",
+            "Emergency stop installed.",
+            "Unauthorized use of sawing bench is prohibited.",
+            "Unplug sawing bench when not in use.",
+            "Do not wear cotton gloves"
+          ]
+        },
+        {
+          "hazard": "Fire caused by wood chips",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Provide container bags to collect wood chips",
+            "Daily cleaning of wood chips",
+            "Provide powder type fire extinguisher at sawing bench",
+            "No smoking on site."
+          ]
+        },
+        {
+          "hazard": "Electric shock",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Sawing bench to be checked by certified electricians",
+            "Electric wires to be hung up or properly protected."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Use of hand held tools (Hammer)",
+      "hazards": [
+        {
+          "hazard": "Fingers struck by hammer",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Workers cannot maintain mental focus are not allowed to perform this task.",
+            "Only skilled workers with sufficient experience are allowed to work with hammers"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Handling of formwork materials",
+      "hazards": [
+        {
+          "hazard": "Twist injury induced by incorrect manual handling  (individual material less than 10 kg)",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "III",
+          "control_measures": [
+            "Establish fixed routing",
+            "Give break for workers at fixed period",
+            "Use tower crane t to minimize the amount of manual handling",
+            "Conduct pre-work exercise",
+            "Identify which type of timber & false work can be carried by manual handling."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Fixing railing by arc welding",
+      "hazards": [
+        {
+          "hazard": "Fire",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Enforce Hot work permit",
+            "Operation area to be fenced-off with warning signs displayed",
+            "Remove any object that can catch fire within work area",
+            "Powder fire extinguisher made ready within reach at operation area",
+            "Spray water at nearby area to prevent ignition by sparks",
+            "Conduct post work inspection to ensure no fire has been left"
+          ]
+        },
+        {
+          "hazard": "Workers burnt by flying sparks",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Workers wear long sleeve clothing, leather gloves and flame cutting mask for body protection",
+            "Use flame-resistant plating to shield off flying sparks (especially at areas close to Logos Academy)"
+          ]
+        },
+        {
+          "hazard": "eye discomfort and burns from the intense light and heat",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Use protective eyewear (flame cutting mask with polarized glasses)",
+            "Set up rest time for workers (5 mins / hour)",
+            "Stop work immediately when workers feel uncomfortable for their eyes",
+            "Shield off area with non-reflective barrier"
+          ]
+        },
+        {
+          "hazard": "Inhale of metallic fumes",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Provide blower fan to ventilate toxic fumes",
+            "Provide workers with N95 mask"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Form work assembly within lift shaft area",
+      "hazards": [
+        {
+          "hazard": "Person fall from height",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Lift shaft Permit system prescribed in CIC guideline be in place for entry control",
+            "Use of lift shaft working platform",
+            "Rigid barrier to be in place during re-location of lift shaft working platform",
+            "Design of working platform must be endorsed by RSE.",
+            "Railing must be fastened and checked by structural  engineer for tightness",
+            "List SWL of working platform and permitted no. of entries allowed.",
+            "Independent life line to be pre-installed within lift shaft."
+          ]
+        },
+        {
+          "hazard": "Collapse of lift shaft working platform",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "List SWL of working platform and permitted no. of entries allowed.",
+            "Independent life line to be pre-installed within lift shaft.",
+            "Do not store material on top of lift shaft working platform.",
+            "Fence-off lift shaft area unless work is needed."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Above ground work (less then 2m)",
+      "hazards": [
+        {
+          "hazard": "Fall of person (less than 2m)",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Use light working platform and other means prescribed in CIC guideline in above ground work",
+            "No A-ladder & wooden ladder is allowed on site."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Bar bending (both on site & off site)",
+      "hazards": [
+        {
+          "hazard": "Twist injury induced by incorrect manual handling",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "For large diameter rebar (Y32-Y50) that requires  multi-person manual handling, one person should be responsible for synchronizing movement of workers",
+            "Conduct pre-work exercise",
+            "Promotion of Safe working cycle"
+          ]
+        },
+        {
+          "hazard": "Slash injury induced by protruding rebars",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Establish fixed routing",
+            "Steel wires used to tie up rebars to be clean up daily"
+          ]
+        },
+        {
+          "hazard": "Slippage/ tipping",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Stagnant water and debris to be cleaned",
+            "Wear safety shoes w/ sufficient treads"
+          ]
+        },
+        {
+          "hazard": "Hands & fingers struck by moving parts of bar bending machine/ moving rebars",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Operators who are mentally unfocused or sick are not allowed to work",
+            "Flashlight to be installed to warn operators",
+            "Workers to pay attention hand/finger position",
+            "Reinforced inspection for off-site bending yard"
+          ]
+        },
+        {
+          "hazard": "Injury caused by unauthorized entry",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Site personnel to confirm no other work to be performed within fence-off area。"
+          ]
+        },
+        {
+          "hazard": "Electric shock",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Electric cables to be hung up or protected underground by robust material",
+            "Workers should not wear damaged safety shoes"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Rebar to be transported by trucks",
+      "hazards": [
+        {
+          "hazard": "Collision with public road vehicles & pedestrians",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Crane operator & escort vehicles should familiarize with routing",
+            "Avoid transportation during peak hours (07:50-08:15, 15:45-16:45)"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting operation involving rebars",
+      "hazards": [
+        {
+          "hazard": "Falling of suspended load",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "All suspended loads are hoist up at about 1m from ground to check for entanglement and secure rigging",
+            "Use double wrapper rigging",
+            "Lifting supervisors to supervise all lifting operations.",
+            "Blow whistle to inform nearby workers",
+            "Use Nylon straps to further secure rebar before rigging",
+            "Fence-off the loading / unloading zone"
+          ]
+        },
+        {
+          "hazard": "Mobile Crane collapse due to unstable footing",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Provide layout of crane deployment",
+            "Support structure of mobile crane to be checked by TCP/T 5"
+          ]
+        },
+        {
+          "hazard": "Damage to crane body & jib",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Check crane in safe working order before work commencement",
+            "Stop lifting when abnormalities is observed.",
+            "Do not use crane for pulling purpose."
+          ]
+        },
+        {
+          "hazard": "Damage to crane body & jib",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Check crane in safe working order before work commencement",
+            "Stop lifting when abnormalities is observed.",
+            "Do not use crane for pulling purpose."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Column fixing",
+      "hazards": [
+        {
+          "hazard": "Fall of person",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "At least one full body harness lanyard to be attached at any given time",
+            "Mobile anchorage can be constructed along working platform to give workers more flexibility of movement",
+            "Use powered working platform if site condition permits (hard paving)"
+          ]
+        },
+        {
+          "hazard": "Collapse of rebar column",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Do store objects on rebar column"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Rebar fixing (floor slab, walls, beams etc)",
+      "hazards": [
+        {
+          "hazard": "Fall of person",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "I",
+          "control_measures": [
+            "Extra precaution to be paid when using light-duty working platform at floor edges",
+            "Deploy look-out person when using light-duty working platform at floor edges"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Rebar fixing (floor slab, walls, beams etc) (continue)",
+      "hazards": [
+        {
+          "hazard": "Slippage/ tripping",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "Wear high heel safety shoes to avoid ankle twist",
+            "Install lighting at access",
+            "Give workers short brakes to prevent lack of focus of workers",
+            "Implement 5S management system"
+          ]
+        },
+        {
+          "hazard": "Twist injury induced by incorrect manual handling",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "A",
+          "risk_level": "III",
+          "control_measures": [
+            "For large diameter rebar (Y32-Y50) that requires  multi-person manual handling, one person should be responsible for synchronizing movement of workers",
+            "Conduct pre-work exercise",
+            "Promotion of Safe working cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Delivery of concrete into site\nby truck mixer",
+      "hazards": [
+        {
+          "hazard": "Crash by truck mixer when\nmoving or reversing",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Clear and separate access should be provided for vehicle and pedestrians",
+            "Truck mixer should be equipped with cctv or",
+            "reversing alarm",
+            "Provision of signalman"
+          ]
+        },
+        {
+          "hazard": "Hand injury by the conveyer\nduct of truck mixer",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Fully extend the out-rigger onto the sound",
+            "ground",
+            "Warning notice should be displayed for beware of conveyer duct",
+            "Properly operate the conveyor duct when",
+            "pouring concrete"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Lifting of concrete hopper by Tower Crane",
+      "hazards": [
+        {
+          "hazard": "Falling object",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Use of proper concrete hopper to deliver",
+            "concrete to working area",
+            "Proper rigging method with tag line",
+            "Concrete hopper should be tested and examined by R.P.E",
+            "Fenced off the lifting area",
+            "Assign banksman on spot monitoring the lifting operation",
+            "Do not overloading",
+            "Use proper lifting gear with adequate capacity",
+            "and valid certificate"
+          ]
+        },
+        {
+          "hazard": "Failure of lifting appliance and  lifting gear",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Check before use to ensure both LA & LG were examined and tested by RPE and the certificates are valid;",
+            "Check the lifting gears before use and ensure that they are in good condition & safe for use;",
+            "Do not exceed the SWL of lifting gear;",
+            "Banksman must be arranged on site."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Concreting of wall and working floor",
+      "hazards": [
+        {
+          "hazard": "Falling from height",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Provision of proper working platform with",
+            "guardrail",
+            "Working platform should be inspected by competent person",
+            "Wear safety harness attached on the anchorage",
+            "point or independent life line",
+            "Proper access should be provided",
+            "Adequate width gangway (400mm) and barrier must be laid / erected to allow workers working on it",
+            "Work sequence and path should be clearly defined"
+          ]
+        },
+        {
+          "hazard": "Falling object",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Provision of concrete hopper with valid certificate",
+            "Working platform or floor edge should be installed with toe board",
+            "Proper rigging method",
+            "Proper lifting gear with adequate capacity should be provided.",
+            "A bucket for storing of accessories e.g bolt and",
+            "nuts should be provided"
+          ]
+        },
+        {
+          "hazard": "Slipping and tripping hazards",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "The workplace should be tidied up properly",
+            "Fence off the material storage area",
+            "Workers should put on non-slip safety shoes",
+            "Stop work during rainy/adverse weather condition."
+          ]
+        },
+        {
+          "hazard": "Collapse of  Columns or wall",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Ensure the walls of steel-bars should be fixed on by timbers.",
+            "Ensure the walls of steel-bars checked by project engineer.",
+            "Re-bars should be protected."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Use concrete vibrator to compact vest concrete",
+      "hazards": [
+        {
+          "hazard": "Fire",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "II",
+          "control_measures": [
+            "Equip with fire fighting equipment nearby or at work place",
+            "Proper use of concrete vibrator especially for",
+            "lubricating",
+            "Proper store of flammable substance and away from working area",
+            "No smoking is allowed"
+          ]
+        },
+        {
+          "hazard": "Vibration",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Review the working program",
+            "Job rotation to the workers if necessary"
+          ]
+        },
+        {
+          "hazard": "Noise by using of concrete\nvibrator",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Wear proper PPE e.g ear plug/muff",
+            "Using of concrete vibrator with lower noise",
+            "Level",
+            "Conduct the Noise assessment",
+            "Add the Noise protection zone"
+          ]
+        },
+        {
+          "hazard": "Eye injury",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Breaking area shall be fenced properly.",
+            "Workers working at the area shall wear eye goggles."
+          ]
+        },
+        {
+          "hazard": "Rainstorm",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "Prepare and establish specific contingency plan before concreting work.",
+            "Ensure the emergency procedure for typhoon (refer to safety plan) is followed.",
+            "Suspend outdoor works and workers stay in safe place.",
+            "No heavy materials stored at the edge of slope."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Material handling",
+      "hazards": [
+        {
+          "hazard": "Manual handling",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "II",
+          "control_measures": [
+            "To arrange enough workers to handle the materials.",
+            "To conduct the risk assessment of manual handling.",
+            "Use plant or equipment to assist to handle the materials."
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Work under hot weather",
+      "hazards": [
+        {
+          "hazard": "Heat Stroke",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "B",
+          "risk_level": "III",
+          "control_measures": [
+            "Safety officer should inform workers and sub-contractor supervisors to take precautions",
+            "Workers not encouraged to consume drinks with caffeine"
+          ]
+        }
+      ]
+    }
+  ]
+}

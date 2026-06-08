@@ -1,0 +1,190 @@
+{
+  "id": "asphalt-paving",
+  "name_zh": "鋪瀝青路面",
+  "name_en": "Asphalt Paving",
+  "category": "others",
+  "ra_references": [
+    "RA13 - A203A"
+  ],
+  "risk_matrix": {
+    "lr_scale": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cr_scale": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "risk_levels": {
+      "I": "不可接受",
+      "II": "可接受（需控制）",
+      "III": "可忽略"
+    }
+  },
+  "work_steps": [
+    {
+      "step": "1",
+      "hazards": [
+        {
+          "hazard": "被運泥車撞倒",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "E",
+          "risk_level": "III",
+          "control_measures": [
+            "1.安排專人帶車",
+            "2.帶車工人必穿著合規反光衣",
+            "3.倒車前須先要求所有不相關人士離開指定路面",
+            "4.車輛在地盤限速不高於5km/H",
+            "2.開工前做適當伸展",
+            "3.提供體力處理操作訓練"
+          ]
+        },
+        {
+          "hazard": "被泥土活埋",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "E",
+          "risk_level": "III",
+          "control_measures": [
+            "1.卸下泥土前圍封預設卸泥範圍，禁止所有人士進入"
+          ]
+        },
+        {
+          "hazard": "吸入粉塵",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "B",
+          "risk_level": "III",
+          "control_measures": [
+            "1.適當灑水減少塵埃"
+          ]
+        },
+        {
+          "hazard": "人力搬運引致\n扭傷",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "C",
+          "risk_level": "III",
+          "control_measures": [
+            "1.利用工具(如雞公車)輔助運送"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "2",
+      "hazards": [
+        {
+          "hazard": "被壓土機撞倒",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "E",
+          "risk_level": "III",
+          "control_measures": [
+            "1.安排專人作協調指揮其移動",
+            "2.指揮員必穿著合規反光衣",
+            "3.須驅離指定路段內所有人士",
+            "4.駕駛限速在不高於5km/H"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "3",
+      "hazards": [
+        {
+          "hazard": "瀝青機起火",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "D",
+          "risk_level": "III",
+          "control_measures": [
+            "1.必須有人看顧開動中的瀝青機",
+            "2.嚴禁在瀝青機開動途中加油",
+            "3.移除周邊易燃或可燃雜物",
+            "2.嚴禁直接用身體接觸熱瀝青",
+            "3.配戴手套，穿著長袖衣物作基本防護",
+            "2.指揮員必穿著合規反光衣",
+            "3.預先巡視運送路線，並填平坑洞，移除路線上雜物"
+          ]
+        },
+        {
+          "hazard": "被高溫瀝青燙傷",
+          "affect": "W,P,E,A",
+          "lr": 4,
+          "cr": "D",
+          "risk_level": "III",
+          "control_measures": [
+            "1.圍封瀝青機，並在其產出熱瀝青時，所有人須保持1M或以上距離"
+          ]
+        },
+        {
+          "hazard": "小型裝戴機傾倒或撞到雜物",
+          "affect": "W,P,E,A",
+          "lr": 2,
+          "cr": "D",
+          "risk_level": "III",
+          "control_measures": [
+            "1.安排專人作協調指揮其移動"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "4",
+      "hazards": [
+        {
+          "hazard": "在火轆上被拖下",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "D",
+          "risk_level": "III",
+          "control_measures": [
+            "1.駕駛員必須配戴座位上的安全帶",
+            "2.上落火轆時須保持3點接觸，不可同時手提任何物件",
+            "3.駕駛限速在不高於5km/H",
+            "2.指揮員必穿著合規反光衣",
+            "3.須驅離指定路段內所有人士",
+            "4.駕駛限速在不高於5km/H"
+          ]
+        },
+        {
+          "hazard": "被火轆撞到",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "E",
+          "risk_level": "III",
+          "control_measures": [
+            "1.安排專人作協調指揮其移動"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "5",
+      "hazards": [
+        {
+          "hazard": "中暑",
+          "affect": "W,P,E,A",
+          "lr": 3,
+          "cr": "D",
+          "risk_level": "III",
+          "control_measures": [
+            "地盤提供足夠飲用水",
+            "提供臨時遮陰設施（太陽傘、帆布）",
+            "上午及下午均指明小休時間",
+            "提供足夠通風散熱風機",
+            "※風險等級之評定參閱安全計劃書"
+          ]
+        }
+      ]
+    }
+  ]
+}
